@@ -10,8 +10,8 @@ on:
 env:
   WEBAPP: phptestervisford    # Ex: app-MobileSalesApp-Prod-USEast-01
   GROUP: visfordlinuxmyown  # Ex:  rg-mobile_sales_app-prod-01
-  ACCOUNT: deploydevtemp  # Does not have to be exist, this will be created for you automatically ( insert any name )
-  CONTAINER: deploydevtempcontainer  # This name of Storage Container ( insert any name )
+  ACCOUNT: thisisthetestaccount  # Does not have to be exist, this will be created for you automatically ( insert any name )
+  CONTAINER: deploydevtempcontainer22  # This name of Storage Container ( insert any name )
   EXPIRY_TIME: 60 minutes
   SUBSCRIPTION: 3ac1466e-ed4b-471a-a7ac-f188654f9746
 
