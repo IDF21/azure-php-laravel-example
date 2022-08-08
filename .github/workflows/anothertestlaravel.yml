@@ -80,7 +80,7 @@ jobs:
 
               ZIP_URL=$(az storage blob generate-sas --full-uri --permissions r --expiry ${{ env.expiry }} --account-name $ACCOUNT -c $CONTAINER -n $ACCOUNT | xargs)
 
-              az rest --method PUT --uri https://management.azure.com/subscriptions/${SUBSCRIPTION}/resourceGroups/${GROUP}/providers/Microsoft.Web/sites/${WEBAPP}/extensions/onedeploy?api-version=2020-12-01 --body '{"properties": {"properties": {"packageUri": "${ZIP_URL}"}, "type":"zip"}}'
+              az rest --method PUT --uri https://management.azure.com/subscriptions/${SUBSCRIPTION}/resourceGroups/${GROUP}/providers/Microsoft.Web/sites/${WEBAPP}/extensions/onedeploy?api-version=2020-12-01 --body '{"properties": {"properties": {"packageUri": "'"${ZIP_URL}"'"}, "type":"zip"}}'
 
               az storage container delete -n $CONTAINER --account-name $ACCOUNT 
 
