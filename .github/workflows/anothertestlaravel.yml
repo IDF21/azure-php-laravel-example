@@ -56,12 +56,13 @@ jobs:
         - name: Download artifact from build job
           uses: actions/download-artifact@v2
           with:
-            name: php-app  
+            name: php-app
+            path: php-app12
         - name: Zip the app contents
           uses: papeloto/action-zip@v1
           with:
-            files: php-app
-            dest: php-app12.zip
+            files: php-app12
+            dest: php-app13.zip
 
 
         - name: Set SAS token expiration
