@@ -82,7 +82,7 @@ jobs:
 
               az rest --method PUT --uri https://management.azure.com/subscriptions/${SUBSCRIPTION}/resourceGroups/${GROUP}/providers/Microsoft.Web/sites/${WEBAPP}/extensions/onedeploy?api-version=2020-12-01 --body '{"properties": {"properties": {"packageUri": "'"${ZIP_URL}"'"}, "type":"zip"}}'
 
-              az storage container delete -n $CONTAINER --account-name $ACCOUNT 
+          
 
 
   
