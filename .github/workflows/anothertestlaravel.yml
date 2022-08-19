@@ -77,7 +77,7 @@ jobs:
 
               az storage account create   -n $ACCOUNT   -g $GROUP -l centralus
               az storage container create -n $CONTAINER --account-name $ACCOUNT
-              az storage blob upload      -f php-app12.zip    --account-name $ACCOUNT -c $CONTAINER -n $ACCOUNT --overwrite
+              az storage blob upload      -f php-app13.zip    --account-name $ACCOUNT -c $CONTAINER -n $ACCOUNT --overwrite
 
               ZIP_URL=$(az storage blob generate-sas --full-uri --permissions r --expiry ${{ env.expiry }} --account-name $ACCOUNT -c $CONTAINER -n $ACCOUNT | xargs)
 
