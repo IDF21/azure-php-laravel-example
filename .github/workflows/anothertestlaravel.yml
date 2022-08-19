@@ -60,7 +60,7 @@ jobs:
         - name: Zip the app contents
           uses: papeloto/action-zip@v1
           with:
-            files: php-app12
+            files: php-app
             dest: php-app12.zip
 
 
