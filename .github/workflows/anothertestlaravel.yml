@@ -57,6 +57,7 @@ jobs:
           uses: actions/download-artifact@v2
           with:
             name: php-app
+            path: php-app
           
         - name: Zip the app contents
           uses: papeloto/action-zip@v1
