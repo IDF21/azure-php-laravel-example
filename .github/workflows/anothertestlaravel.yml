@@ -8,7 +8,7 @@ on:
     
 
 env:
-  WEBAPP: phptestervisford    # Ex: app-MobileSalesApp-Prod-USEast-01
+  WEBAPP: PHPTESTER2    # Ex: app-MobileSalesApp-Prod-USEast-01
   GROUP: visfordlinuxmyown  # Ex:  rg-mobile_sales_app-prod-01
   ACCOUNT: thisisthetestaccount  # Does not have to be exist, this will be created for you automatically ( insert any name )
   CONTAINER: deploydevtempcontainer22  # This name of Storage Container ( insert any name )
